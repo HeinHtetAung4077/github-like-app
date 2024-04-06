@@ -21,7 +21,7 @@ passport.use(
     {
       clientID: process.env.GITHUB_CLIENT_ID,
       clientSecret: process.env.GITHUB_CLIENT_SECRET,
-      callbackURL: "http://localhost:5000/api/auth/github/callback",
+      callbackURL: "https://github-like-app-d6kq.onrender.com/api/auth/github/callback",
     },
     async function (accessToken, refreshToken, profile, done) {
       // asynchronous verification, for effect...
